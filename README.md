@@ -7,7 +7,7 @@ This is a random wiki page generator. You can also add a category for the search
 ## How to start?
 
 1. npm install
-2. node app.js
+2. npm start
 
 ## FAQ
 
