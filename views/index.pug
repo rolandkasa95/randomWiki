@@ -1,0 +1,16 @@
+html
+  head
+    title= title
+  body(style="margin: 0;")
+
+    form(method='get' action='/')
+      input.search(
+        type='text'
+        name='category'
+        value=`${category || ""}`
+        placeholder='Enter a category...'
+        style="display: inline-block;position: absolute;border: 1px solid #e2a922;padding: 5px;border-radius: 5px;left: 33%;top: 5px;background-color: #e2a922;font-weight: 700;font-size: 24px;color: white;text-decoration: none;"
+      )
+      button.btn.btn-primary(type='submit', style="display: inline-block;position: absolute;border: 1px solid #e2a922;padding: 5px;border-radius: 5px;left: 50%;top: 5px;background-color: #e2a922;font-weight: 700;font-size: 24px;color: white;text-decoration: none;") Reload
+    
+    iframe(src=`${canonicalurl}`, frameborder="0", style="overflow:hidden;height:95%;width:100%" height="100%" width="100%")
